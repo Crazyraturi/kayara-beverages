@@ -1,0 +1,746 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: antiquewhite;
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 7vw;
+}
+
+nav img {
+  height: 8vw;
+  overflow: hidden;
+  margin-left: 2vw;
+}
+
+#nav-menu {
+  display: flex;
+  gap: 3vw;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+#nav-menu h1 {
+  color: #204e3a;
+  font-size: 1vw;
+  font-weight: 400;
+}
+
+#nav-menu h1 a {
+  color: #204e3a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#nav-menu h1 a:hover {
+  color: rgba(242, 133, 0, 0.821);
+}
+
+/* hero section css */
+
+#heroSection {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  margin-top: 2vw;
+}
+
+#heroSection img {
+  height: 30vw;
+}
+#leftHeroSection {
+  width: 40%;
+  padding: 2vw;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1vw;
+  color: #204e3a;
+  margin: 5vw 0;
+  margin-left: 7vw;
+}
+#leftHeroSection h1 {
+  font-size: 5vw;
+  line-height: 5vw;
+}
+#leftHeroSection p {
+  margin-top: 3vw;
+  text-align: justify;
+}
+
+button {
+  color: white;
+  background-color: rgba(242, 133, 0, 0.821);
+  padding: 1vw;
+  border-radius: 50px;
+  font-size: large;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+
+#rightHeroSection {
+  width: 60%;
+  display: flex;
+  margin: 3vw 3vw;
+  align-items: center;
+}
+
+#rightHeroSection img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* aboutSection css */
+
+#aboutSection {
+  display: flex;
+  flex-direction: column;
+  margin: 7vw 7vw;
+  color: #204e3a;
+
+  font-family: "Poppins", sans-serif;
+}
+#Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#about-left {
+  width: 50%;
+  padding: 3rem;
+  text-align: center;
+}
+
+#about-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about-right img {
+  border-radius: 2rem;
+  height: 30rem;
+  width: 20rem;
+  object-fit: cover;
+  object-position: top;
+}
+
+#about-left p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  margin-top: 1.5rem;
+  color: #204e3a;
+}
+
+/* product section */
+
+#productSection {
+  display: flex;
+  flex-direction: column;
+  margin: 10vw 7vw;
+  color: #204e3a;
+
+  font-family: "Poppins", sans-serif;
+}
+
+#products {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 2rem;
+}
+
+#products img {
+  width: 300px;
+  height: 400px;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* contact us */
+#contact {
+  padding: 4rem 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #204e3a;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: auto;
+
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.contact-container p {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-form button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: rgba(242, 133, 0, 0.821);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: rgb(242, 133, 0);
+}
+
+button:hover {
+  background-color: rgb(242, 133, 0);
+}
+
+/* footer css  */
+
+#footer {
+  background-color: #204e3a;
+  color: white;
+  padding: 3rem 1.5rem 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-brand h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #6bbe44;
+}
+
+.footer-links ul,
+.footer-contact p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links a,
+.footer-contact a {
+  text-decoration: none;
+  color: #f1f1f1;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+  color: #6bbe44;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  #products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  #products img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  nav {
+    padding: 2vw 4vw;
+  }
+
+  nav img {
+    height: 10vw;
+  }
+
+  #nav-menu h1 {
+    font-size: 1.5vw;
+  }
+
+  #heroSection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #leftHeroSection {
+    width: 80%;
+    margin: 2vw auto;
+    align-items: center;
+  }
+
+  #rightHeroSection {
+    width: 80%;
+  }
+
+  #rightHeroSection img {
+    width: 100%;
+    height: auto;
+  }
+
+  #Section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about-left,
+  #about-right {
+    width: 80%;
+    text-align: center;
+  }
+
+  #about-right img {
+    width: 100%;
+    height: auto;
+  }
+
+  #aboutSection h1,
+  #productSection h1 {
+    font-size: 2rem;
+  }
+
+  #about-left p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 2vw;
+    align-items: center;
+  }
+
+  nav img {
+    height: 15vw;
+    margin: 1vw 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #rightHeroSection {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  #rightHeroSection img {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  #about-right {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #about-right img {
+    width: 60%;
+    height: auto;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #products {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  #products img {
+    width: 60%;
+    height: auto;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #nav-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+  }
+
+  #nav-menu h1 {
+    font-size: 2vw;
+  }
+
+  #nav-menu h1 a {
+    display: block;
+    padding: 10px 0;
+  }
+
+  #leftHeroSection h1 {
+    font-size: 6vw;
+    line-height: 6vw;
+  }
+
+  #leftHeroSection p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  button {
+    padding: 2vw 4vw;
+    font-size: 3vw;
+  }
+
+  #aboutSection {
+    margin: 4vw;
+  }
+
+  #about-left p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  #productSection {
+    margin: 4vw;
+  }
+
+  .contact-container {
+    padding: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 3vw;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .footer-links ul {
+    justify-content: center;
+  }
+
+  /* Hamburger Menu Styles */
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  #nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    z-index: 99;
+  }
+
+  #nav-menu.active {
+    right: 0;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+  #nav-menu h1 {
+    margin: 20px 0;
+    font-size: 24px;
+  }
+
+  #aboutSection h1,
+  #productSection h1 {
+    font-size: 1.8rem;
+  }
+
+  #Section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about-left,
+  #about-right {
+    width: 80%;
+    text-align: center;
+  }
+
+  #products {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  #products img {
+    width: 60%;
+    height: auto;
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav img {
+    height: 20vw;
+    width: auto;
+  }
+
+  #rightHeroSection {
+    width: 100%;
+    padding: 0;
+  }
+
+  #rightHeroSection img {
+    width: 100%;
+    max-width: none;
+  }
+
+  #about-right {
+    display: none;
+  }
+
+  #about-left {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  #Section {
+    flex-direction: column;
+  }
+
+  #nav-menu h1 {
+    font-size: 4vw;
+  }
+
+  #leftHeroSection {
+    width: 90%;
+  }
+
+  #rightHeroSection {
+    width: 90%;
+  }
+
+  #leftHeroSection h1 {
+    font-size: 8vw;
+    line-height: 8vw;
+  }
+
+  #leftHeroSection p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  button {
+    padding: 3vw 6vw;
+    font-size: 4vw;
+  }
+
+  #about-left p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 4vw;
+  }
+
+  .footer-brand h2 {
+    font-size: 6vw;
+  }
+
+  .footer-links h4,
+  .footer-contact h4 {
+    font-size: 4vw;
+  }
+
+  .footer-links a,
+  .footer-contact p {
+    font-size: 3.5vw;
+  }
+
+  #aboutSection h1,
+  #productSection h1 {
+    font-size: 1.5rem;
+  }
+
+  #about-left,
+  #about-right {
+    width: 90%;
+  }
+
+  #products img {
+    width: 70%;
+    max-width: 200px;
+  }
+}
+
+/* Fix for very small screens */
+@media screen and (max-width: 320px) {
+  #leftHeroSection h1 {
+    font-size: 10vw;
+    line-height: 10vw;
+  }
+
+  #leftHeroSection p {
+    font-size: 5vw;
+  }
+
+  button {
+    padding: 4vw 8vw;
+    font-size: 5vw;
+  }
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #204e3a;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Navigation Styles */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  #nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    z-index: 99;
+  }
+
+  #nav-menu.active {
+    right: 0;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+  #nav-menu h1 {
+    margin: 20px 0;
+    font-size: 24px;
+  }
+}
