@@ -9,4 +9,4 @@
 ## step 2: press right click on the  mouse and choose open with Live Server
 ## step 3: the website opens in your default browser
 
-live link:
+live link: https://kayara-beverages.vercel.app/
